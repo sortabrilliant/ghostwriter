@@ -6,12 +6,15 @@
             var typedElement = $( element ).clone().attr( 'id', `heading-${index}` ).html( '<span></span>' );
             $( element ).after( typedElement );
             $( element ).hide();
+            
+            var typedDefaults = {
+                strings: [ element.innerText ]
+            };
 
-            new Typed( `#heading-${index} span`, {
-                strings: [ element.innerText ],
-                typeSpeed: 75,
-                loop: true,
-            } );
+            new Typed(
+                `#heading-${index} span`,
+                $.extend( {}, typedDefaults, _SBB_GHOSTWRITER.typedjs_options )
+            );
         } );
     } );
 

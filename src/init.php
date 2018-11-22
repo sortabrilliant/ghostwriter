@@ -36,12 +36,27 @@ function sbb_ghostwriter_scripts() {
 		'2.0.9',
 		true
 	);
-	wp_enqueue_script(
+
+	wp_register_script(
 		'sbb-ghostwriter-theme-js',
 		plugins_url( '/src/sbb-ghostwriter-theme.js', dirname( __FILE__ ) ),
 		array( 'jquery', 'sbb-typedjs' ),
 		filemtime( plugin_dir_path( __DIR__ ) . 'src/sbb-ghostwriter-theme.js' ),
 		true
 	);
+	wp_localize_script(
+		'sbb-ghostwriter-theme-js',
+		'_SBB_GHOSTWRITER',
+		array(
+			'typedjs_options' => apply_filters(
+				'sbb_ghostwriter_typedjs_options',
+				array(
+					'typeSpeed' => 75,
+					'loop'      => true,
+				)
+			),
+		)
+	);
+	wp_enqueue_script( 'sbb-ghostwriter-theme-js' );
 }
 add_action( 'wp_enqueue_scripts', 'sbb_ghostwriter_scripts' );
