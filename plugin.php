@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Ghostwriter
  * Plugin URI: https://sortabrilliant.com/ghostwriter/
- * Description: Ghostwriter
+ * Description: Static headings are boring, let’s get them moving.
  * Author: sorta brilliant
  * Author URI: https://sortabrilliant.com
  * Version: 0.0.1
