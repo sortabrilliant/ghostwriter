@@ -5,7 +5,7 @@
  * Description: Static headings are boring, let’s get them moving.
  * Author: sorta brilliant
  * Author URI: https://sortabrilliant.com
- * Version: 0.0.1
+ * Version: 1.0.0
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
