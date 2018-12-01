@@ -8,3 +8,10 @@ registerBlockStyle('core/heading', {
     label: __('Ghostwriter'),
     isDefault: false,
 });
+
+// Default heading style for resetting block.
+registerBlockStyle('core/heading', {
+    name: 'default',
+    label: __('Default'),
+    isDefault: true,
+});
