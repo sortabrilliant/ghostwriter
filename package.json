@@ -1,14 +1,16 @@
 {
-  "name": "sbb-ghostwriter-cgb-guten-block",
-  "version": "1.0.1",
-  "private": true,
-  "scripts": {
-    "start": "cgb-scripts start",
-    "build": "cgb-scripts build",
-    "eject": "cgb-scripts eject"
-  },
-  "dependencies": {
-    "cgb-scripts": "1.9.8",
-    "typed.js": "^2.0.9"
-  }
+	"private": true,
+	"scripts": {
+		"build": "wp-scripts build",
+		"env": "wp-scripts env"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^6.1.1",
+		"typed.js": "^2.0.11"
+	},
+	"wp-env": {
+		"plugin-dir": "sbb-ghostwriter",
+		"plugin-name": "Ghostwriter",
+		"welcome-build-command": "npm run build"
+	}
 }
