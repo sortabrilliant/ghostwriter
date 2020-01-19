@@ -1,4 +1,9 @@
 <?php
+/**
+ * Load assets for our blocks.
+ *
+ * @package Ghostwriter
+ */
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -6,28 +11,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Enqueue Gutenberg block assets for backend editor.
+ * Enqueue block assets for the editor.
  *
  * @since 1.0.0
  */
 function sbb_ghostwriter_editor_assets() {
-	wp_enqueue_script(
-		'sbb_ghostwriter-block-js',
-		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ),
-		array( 'wp-i18n', 'wp-element', 'wp-editor', 'wp-edit-post' ),
-		filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ),
-		true // load in the footer
+	$asset_filepath = SBBGW_PLUGIN_DIR . '/build/index.asset.php';
+	$asset_file     = file_exists( $asset_filepath ) ? include $asset_filepath : array(
+		'dependencies' => array(),
+		'version'      => SBBGW_VERSION,
 	);
 
-	wp_enqueue_style(
-		'sbb_ghostwriter-block-editor-css',
-		plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ),
-		array( 'wp-edit-blocks' ),
-		filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' )
+	wp_enqueue_script(
+		'sbb_ghostwriter-block-js',
+		SBBGW_PLUGIN_URL . 'build/index.js',
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true
 	);
 }
 add_action( 'enqueue_block_editor_assets', 'sbb_ghostwriter_editor_assets' );
 
+/**
+ * Enqueue block assets for the theme.
+ *
+ * @since 1.0.0
+ */
 function sbb_ghostwriter_scripts() {
 	wp_enqueue_script(
 		'sbb-typedjs',
@@ -39,9 +48,9 @@ function sbb_ghostwriter_scripts() {
 
 	wp_register_script(
 		'sbb-ghostwriter-theme-js',
-		plugins_url( '/src/sbb-ghostwriter-theme.js', dirname( __FILE__ ) ),
+		SBBGW_PLUGIN_URL . 'src/sbb-ghostwriter-theme.js',
 		array( 'jquery', 'sbb-typedjs' ),
-		filemtime( plugin_dir_path( __DIR__ ) . 'src/sbb-ghostwriter-theme.js' ),
+		SBBGW_VERSION,
 		true
 	);
 	wp_localize_script(

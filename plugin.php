@@ -9,7 +9,7 @@
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package SB
+ * @package Ghostwriter
  */
 
 // Exit if accessed directly.
@@ -17,7 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+define( 'SBBGW_VERSION', '1.0.1' );
+define( 'SBBGW_PLUGIN_DIR', dirname( __FILE__ ) );
+define( 'SBBGW_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
 /**
  * Block Initializer.
  */
-require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
+require_once SBBGW_PLUGIN_DIR . '/src/init.php';

@@ -1,16 +1,16 @@
 
-const { __ } = wp.i18n;
-const { registerBlockStyle } = wp.blocks;
+import { __ } from '@wordpress/i18n';
+import { registerBlockStyle } from '@wordpress/blocks';
 
-registerBlockStyle('core/heading', {
-    name: 'ghostwriter',
-    label: __('Ghostwriter'),
-    isDefault: false,
-});
+registerBlockStyle( 'core/heading', {
+	name: 'ghostwriter',
+	label: __( 'Ghostwriter' ),
+	isDefault: false,
+} );
 
 // Default heading style for resetting block.
-registerBlockStyle('core/heading', {
-    name: 'default',
-    label: __('Default'),
-    isDefault: true,
-});
+registerBlockStyle( 'core/heading', {
+	name: 'default',
+	label: __( 'Default' ),
+	isDefault: true,
+} );

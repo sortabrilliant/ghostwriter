@@ -2,7 +2,8 @@
 	"private": true,
 	"scripts": {
 		"build": "wp-scripts build",
-		"env": "wp-scripts env"
+		"env": "wp-scripts env",
+		"lint-js": "wp-scripts lint-js"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^6.1.1",
