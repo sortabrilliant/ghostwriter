@@ -1,6 +1,7 @@
 {
 	"private": true,
 	"scripts": {
+		"start": "wp-scripts start",
 		"build": "wp-scripts build",
 		"env": "wp-scripts env",
 		"lint-js": "wp-scripts lint-js",
@@ -13,6 +14,6 @@
 	"wp-env": {
 		"plugin-dir": "sbb-ghostwriter",
 		"plugin-name": "Ghostwriter",
-		"welcome-build-command": "npm run build"
+		"welcome-build-command": "npm run start"
 	}
 }
