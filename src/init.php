@@ -38,21 +38,20 @@ add_action( 'enqueue_block_editor_assets', 'sbb_ghostwriter_editor_assets' );
  * @since 1.0.0
  */
 function sbb_ghostwriter_scripts() {
-	wp_enqueue_script(
-		'sbb-typedjs',
-		'//cdn.jsdelivr.net/npm/typed.js@2.0.9',
-		array(),
-		'2.0.9',
-		true
+	$asset_filepath = SBBGW_PLUGIN_DIR . '/build/sbb-ghostwriter-theme.asset.php';
+	$asset_file     = file_exists( $asset_filepath ) ? include $asset_filepath : array(
+		'dependencies' => array(),
+		'version'      => SBBGW_VERSION,
 	);
 
 	wp_register_script(
 		'sbb-ghostwriter-theme-js',
-		SBBGW_PLUGIN_URL . 'src/sbb-ghostwriter-theme.js',
-		array( 'jquery', 'sbb-typedjs' ),
-		SBBGW_VERSION,
+		SBBGW_PLUGIN_URL . 'build/sbb-ghostwriter-theme.js',
+		$asset_file['dependencies'],
+		$asset_file['version'],
 		true
 	);
+
 	wp_localize_script(
 		'sbb-ghostwriter-theme-js',
 		'_SBB_GHOSTWRITER',

@@ -1,4 +1,7 @@
-/* global jQuery Typed _SBB_GHOSTWRITER */
+/* global _SBB_GHOSTWRITER */
+import jQuery from 'jquery';
+import Typed from 'typed.js';
+
 ( function( $ ) {
 	'use strict';
 
