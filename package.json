@@ -3,10 +3,11 @@
 	"scripts": {
 		"build": "wp-scripts build",
 		"env": "wp-scripts env",
-		"lint-js": "wp-scripts lint-js"
+		"lint-js": "wp-scripts lint-js",
+		"lint-php": "wp-scripts env lint-php"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^6.1.1",
+		"@wordpress/scripts": "^6.2.0",
 		"typed.js": "^2.0.11"
 	},
 	"wp-env": {
