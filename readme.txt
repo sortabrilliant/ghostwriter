@@ -19,12 +19,6 @@ Instead creating an entirely new block we wanted to try adding the effect to the
 = Where can I learn more? =
 Learn more at [sorta brilliant](https://sortabrilliant.com/ghostwriter/).
 
-== Installation ==
-
-1. Download the plugin and extract the files
-2. Upload `sbb-ghostwriter` to your `~/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-
 == Changelog ==
 
 * Cleanup for directory submission.
