@@ -1,5 +1,5 @@
 === Ghostwriter ===
-Contributors: sortabrilliant, nickhamze, jrtashjian
+Contributors: sortabrilliant, jrtashjian
 Tags: typedjs, heading, style
 Requires at least: 5.0
 Tested up to: 5.3.2
