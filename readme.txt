@@ -1,5 +1,5 @@
 === Ghostwriter ===
-Contributors: sortabrilliant, nickhamze, jrtashjian
+Contributors: sortabrilliant, jrtashjian
 Tags: typedjs, heading, style
 Requires at least: 5.0
 Tested up to: 5.3.2
@@ -19,6 +19,11 @@ Instead creating an entirely new block we wanted to try adding the effect to the
 = Where can I learn more? =
 Learn more at [sorta brilliant](https://sortabrilliant.com/ghostwriter/).
 
+== Screenshots ==
+
+1. See it in action.
+2. Just select the style and we'll do the rest.
+
 == Changelog ==
 
-* Cleanup for directory submission.
+* 1.0.2 Cleanup for directory submission.
