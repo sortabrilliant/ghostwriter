@@ -3,7 +3,7 @@ Contributors: sortabrilliant, nickhamze, jrtashjian
 Tags: typedjs, heading, style
 Requires at least: 5.0
 Tested up to: 5.3.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -19,6 +19,12 @@ Instead creating an entirely new block we wanted to try adding the effect to the
 = Where can I learn more? =
 Learn more at [sorta brilliant](https://sortabrilliant.com/ghostwriter/).
 
+== Screenshots ==
+
+1. See it in action.
+2. Just select the style and we'll do the rest.
+
 == Changelog ==
 
-* Cleanup for directory submission.
+* Updating plugin slug for the plugin directory.
+* Misc updates related to development and deployment of each release.
