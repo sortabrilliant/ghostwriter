@@ -16,10 +16,10 @@ Default options:
 }
 ```
 
-You can customize these options with the `sbb_ghostwriter_typedjs_options` filter. Example:
+You can customize these options with the `ghstwrtr_typedjs_options` filter. Example:
 
 ```
-add_filter( 'sbb_ghostwriter_typedjs_options', function( $options ) {
+add_filter( 'ghstwrtr_typedjs_options', function( $options ) {
     $options[ 'typeSpeed' ] = 25;
     return $options;
 } );

@@ -6,6 +6,6 @@ module.exports = {
 
 	entry: {
 		...defaultConfig.entry,
-		'sbb-ghostwriter-theme': path.resolve( process.cwd(), 'src/sbb-ghostwriter-theme.js' ),
+		'ghstwrtr-theme': path.resolve( process.cwd(), 'src/ghstwrtr-theme.js' ),
 	},
 };
