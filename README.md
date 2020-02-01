@@ -24,17 +24,4 @@ add_filter( 'ghstwrtr_typedjs_options', function( $options ) {
     return $options;
 } );
 ```
-
-## Setup
-To get set up for development, run `composer install && npm install`
-
-### Developing
-
-To work on the plugin and have Webpack watch your files for changes run: `npm start`
-
-### Generating Builds
-
-To generate a build, run: `bash .dev/build-release.sh`
-
-## Where can I learn more?
-Learn more at [sorta brilliant](https://sortabrilliant.com/ghostwriter/).
+![gw](https://ps.w.org/ghstwrtr/assets/screenshot-1.gif?rev=2231287 "gw")
