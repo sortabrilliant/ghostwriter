@@ -5,7 +5,7 @@
  * Description: Static headings are boring, let’s get them moving.
  * Author: sorta brilliant
  * Author URI: https://sortabrilliant.com
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GHSTWRTR_VERSION', '1.0.3' );
+define( 'GHSTWRTR_VERSION', '1.0.4' );
 define( 'GHSTWRTR_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'GHSTWRTR_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
